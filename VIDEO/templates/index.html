@@ -62,7 +62,7 @@
         <i>{{data.date}}</i>
         <p>{{data.description}}</p>
         <center>
-          <video src={{data.video.url}} controls muted height="500px"><track src="{% static 'subtitles/en.vtt' %}" kind="subtitles" srclang="en" label="English" default></video>
+          <video src={{data.video.url}} controls muted height="500px"></video>
         </center>
       </div>
     {% endfor %}
