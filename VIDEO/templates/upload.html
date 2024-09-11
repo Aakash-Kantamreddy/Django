@@ -1,0 +1,23 @@
+{% extends "index.html" %}
+
+{% block title %}
+      UPLOAD
+    {% endblock title %}
+
+    {% block content %}
+    <h1 class="text-center" >Upload here</h1>
+    
+    {% endblock content %}
+     
+
+
+    {% block upload %}
+    <form method="post" enctype="multipart/form-data" class="text-center">
+      {% csrf_token %}
+ 
+      <input type="text" name="title" placeholder="enter your title">
+       <input type="file" name="video">
+       <button type="submit">upload</button>
+     </form>
+    {% endblock upload %}
+    
